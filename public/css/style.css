@@ -118,5 +118,42 @@ body {
 /* Map */
 #map {
     height: 400px;
-    width: 80vh;
+    width: auto ;
+}
+
+
+/* ================= NAVBAR RESPONSIVE FIX ================= */
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto !important;
+    }
+
+    .search-inp {
+        width: auto !important;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .search-btn {
+        height: 40px;
+    }
+    
+    .navbar-collapse {
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .navbar-nav .explore{
+        display: none;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    #map {
+        height: 350px;
+        width: auto;
+    }
 }
